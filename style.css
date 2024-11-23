@@ -5,14 +5,58 @@ body {
     background-color: #f9f9f9;
 }
 
+/* Container to hold left and right */
+.container {
+    display: flex;
+    height: 100vh;
+    background-color: #000000;
+
+}
+
+/* Left and right sides */
+.left {
+    display: flex;
+    flex-direction: column;
+    /* Allows flexbox containers inside to stack vertically */
+    width: 17%;
+    height: 100vh;
+    overflow-y: auto;
+    /* Enable scrolling*/
+}
+
+/* Left and right sides */
+.right {
+    display: flex;
+    flex-direction: column;
+    /* Allows flexbox containers inside to stack vertically */
+    width: 83%;
+    height: 100vh;
+    overflow-y: auto;
+    /* Enable scrolling*/
+}
+
 .header {
-    background-color: #ff0000;
     height: 60px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     color: white;
-    padding: 0 20px;
+    padding: 20px;
+}
+
+.search-bar {
+    display: flex;
+    background-color: grey;
+    justify-content: center;
+    width: 60%;
+}
+
+.widgets {
+    background-color: grey;
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
 }
 
 .nav {
@@ -26,26 +70,18 @@ body {
 .main-content {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     padding: 20px;
 }
 
 .video-box {
     background-color: #e0e0e0;
-    width: 220px;
-    height: 120px;
+    width: 30%;
+    padding-bottom: 17%;
     margin: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
     color: #333;
     font-weight: bold;
-}
-
-.footer {
-    background-color: #cccccc;
-    height: 40px;
-    text-align: center;
-    line-height: 40px;
-    color: #333;
 }
