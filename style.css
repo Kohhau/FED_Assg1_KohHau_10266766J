@@ -38,12 +38,12 @@ img {
 }
 
 .left img {
-    width: 20px;
+    width: 33px;
     margin-right: 20px;
 }
 
 .navigation-links a img {
-    width: 20px;
+    width: 33px;
     margin-right: 20px;
 }
 
@@ -60,6 +60,7 @@ img {
 }
 
 .navigation-links hr {
+    margin-left: 0;
     width: 85%;
     border: 0;
     height: 1px;
@@ -81,11 +82,13 @@ img {
 }
 
 .subscribed-list a img {
-    width: 25px;
+    width: 40px;
     border-radius: 50%;
     margin-right: 20;
     border: 1px solid #ccc;
 }
+
+
 
 .compressed {
     width: 5%;
@@ -100,9 +103,10 @@ img {
 }
 
 .compressed hr {
-    width: 50%;
+    width: 70%;
     margin-bottom: 25px;
 }
+
 
 /*RIGHT CONTENT*/
 .right {
@@ -115,6 +119,9 @@ img {
     /* Enable scrolling*/
 }
 
+.expand {
+    width: 95%;
+}
 
 
 
