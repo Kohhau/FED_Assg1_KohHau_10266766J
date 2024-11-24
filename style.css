@@ -3,28 +3,108 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f9f9f9;
+    box-sizing: border-box;
 }
 
-/* Container to hold left and right */
+a {
+    text-decoration: none;
+    color: #5a5a5a;
+}
+
+img {
+    cursor: pointer;
+}
+
+
 .container {
     display: flex;
-    height: 100vh;
-    background-color: #000000;
-
+    justify-content: right;
+    width: 100%;
 }
 
-/* Left and right sides */
+/*LEFT NAVIGATION*/
 .left {
     display: flex;
     flex-direction: column;
     /* Allows flexbox containers inside to stack vertically */
     width: 17%;
     height: 100vh;
+    position: fixed;
+    left: 0;
+    padding-left: 2%;
+    padding-top: 30px;
     overflow-y: auto;
     /* Enable scrolling*/
 }
 
-/* Left and right sides */
+.left img {
+    width: 20px;
+    margin-right: 20px;
+}
+
+.navigation-links a img {
+    width: 20px;
+    margin-right: 20px;
+}
+
+.navigation-links a {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    width: fit-content;
+    flex-wrap: wrap;
+}
+
+.navigation-links a:first-child {
+    color: #ed3833
+}
+
+.navigation-links hr {
+    width: 85%;
+    border: 0;
+    height: 1px;
+    background: #ccc
+}
+
+.subscribed-list a {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    width: fit-content;
+}
+
+.subscribed-list h3 {
+    font-size: 13px;
+    margin: 20px 0;
+    color: #5a5a5a;
+}
+
+.subscribed-list a img {
+    width: 25px;
+    border-radius: 50%;
+    margin-right: 20;
+    border: 1px solid #ccc;
+}
+
+.compressed {
+    width: 5%;
+}
+
+.compressed a p {
+    display: none;
+}
+
+.compressed h3 {
+    display: none;
+}
+
+.compressed hr {
+    width: 50%;
+    margin-bottom: 25px;
+}
+
+/*RIGHT CONTENT*/
 .right {
     display: flex;
     flex-direction: column;
@@ -35,21 +115,9 @@ body {
     /* Enable scrolling*/
 }
 
-.header {
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    color: white;
-    padding: 20px;
-}
 
-.search-bar {
-    display: flex;
-    background-color: grey;
-    justify-content: center;
-    width: 60%;
-}
+
+
 
 .widgets {
     background-color: grey;
@@ -59,18 +127,12 @@ body {
     margin-left: auto;
 }
 
-.nav {
-    background-color: #cccccc;
-    height: 40px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
+
 
 .main-content {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 20px;
 }
 
@@ -79,9 +141,65 @@ body {
     width: 30%;
     padding-bottom: 17%;
     margin: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     color: #333;
     font-weight: bold;
+}
+
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+nav {
+    background-color: white;
+    justify-content: space-between;
+    padding: 10px 2%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.nav-left .menu {
+    width: 20px;
+    margin-right: 25px;
+}
+
+.nav-left .logo {
+    width: 130px;
+}
+
+.nav-middle .mic-image {
+    width: 16px;
+}
+
+.nav-middle .search-bar {
+    border: 1px solid #ccc;
+    margin-right: 15px;
+    padding: 8px 12px;
+    border-radius: 25px;
+}
+
+.nav-middle .search-bar input {
+    width: 400px;
+    border: 0;
+    outline: 0;
+    background-color: transparent;
+}
+
+.nav-middle .search-bar img {
+    width: 15px;
+}
+
+.nav-right img {
+    width: 25px;
+    margin-right: 25px;
+
+}
+
+.nav-right .DP {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
 }
