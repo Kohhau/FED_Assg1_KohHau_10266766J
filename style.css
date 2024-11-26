@@ -8,7 +8,7 @@ body {
 
 a {
     text-decoration: none;
-    color: #5a5a5a;
+    color: black
 }
 
 img {
@@ -31,10 +31,9 @@ img {
     height: 100vh;
     position: fixed;
     left: 0;
-    padding-left: 2%;
+    padding-left: 1%;
     padding-top: 30px;
-    overflow-y: auto;
-    /* Enable scrolling*/
+    transition: 0.3s;
 }
 
 .left img {
@@ -92,6 +91,7 @@ img {
 
 .compressed {
     width: 5%;
+    transition: 0.3s;
 }
 
 .compressed a p {
@@ -105,6 +105,7 @@ img {
 .compressed hr {
     width: 70%;
     margin-bottom: 25px;
+    transition: 0.3s;
 }
 
 
@@ -115,12 +116,13 @@ img {
     /* Allows flexbox containers inside to stack vertically */
     width: 83%;
     height: 100vh;
-    overflow-y: auto;
-    /* Enable scrolling*/
+    background: #cccccc33;
+    transition: 0.3s;
 }
 
 .expand {
     width: 95%;
+    transition: 0.3s;
 }
 
 
@@ -137,10 +139,57 @@ img {
 
 
 .main-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    column-gap: 16px;
+    row-gap: 30px;
+    margin-top: 15px;
+}
+
+.video-list .thumbnail {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.video-list .flex {
+    align-items: flex-start;
+    margin-top: 7px;
+}
+
+.video-list .flex img {
+    width: 35px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.tags {
+    padding-top: 30px;
+    padding-bottom: 25px;
+    justify-content: flex-start;
+    overflow: scroll;
+    overflow-y: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+    /* Remove scrollbar space */
+    background: transparent;
+    /* Optional: just make scrollbar invisible */
+}
+
+
+.tags a div {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 20px;
+    align-items: center;
+    background-color: #9d969630;
+    margin: 0 10px;
+    height: 32px;
+    border-radius: 8px;
+    min-width: max-content;
+}
+
+.tags a div p {
+    padding: 0 10px;
 }
 
 .video-box {
