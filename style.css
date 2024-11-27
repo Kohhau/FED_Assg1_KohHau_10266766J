@@ -16,11 +16,6 @@ img {
 }
 
 
-.container {
-    display: flex;
-    justify-content: right;
-    width: 100%;
-}
 
 /*LEFT NAVIGATION*/
 .left {
@@ -111,18 +106,19 @@ img {
 
 /*RIGHT CONTENT*/
 .right {
+    padding-left: 17%;
     display: flex;
     flex-direction: column;
     /* Allows flexbox containers inside to stack vertically */
     width: 83%;
     height: 100vh;
-    background: #cccccc33;
     transition: 0.3s;
 }
 
 .expand {
     width: 95%;
     transition: 0.3s;
+    padding-left: 5%;
 }
 
 
@@ -143,7 +139,7 @@ img {
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     column-gap: 16px;
     row-gap: 30px;
-    margin-top: 15px;
+    padding-top: 15px;
 }
 
 .video-list .thumbnail {
@@ -162,9 +158,20 @@ img {
     border-radius: 50%;
 }
 
+.vid-info {
+    color: #5a5a5a;
+    font-size: 13px;
+}
+
+.vid-info a {
+    font-weight: bold;
+    color: #000;
+    display: block;
+    margin-bottom: 5px;
+}
+
 .tags {
-    padding-top: 30px;
-    padding-bottom: 25px;
+    padding: 30px 0;
     justify-content: flex-start;
     overflow: scroll;
     overflow-y: hidden;
@@ -258,4 +265,120 @@ nav {
     height: 35px;
     width: 35px;
     border-radius: 50%;
+}
+
+@media (max-width:900px) {
+
+
+    .menu {
+        display: none;
+    }
+
+    .left {
+        display: none;
+    }
+
+    .right,
+    .expand {
+        width: 100%;
+        padding: 0;
+    }
+
+    .main-content {
+        width: 90%;
+        align-self: center;
+    }
+
+    .nav-right img {
+        display: none;
+    }
+
+    .nav-right .DP {
+        display: block;
+        width: 30px;
+        height: 30px;
+    }
+
+    .nav-middle .search-bar input {
+        width: 100px;
+    }
+
+    .nav-middle .mic-image {
+        display: none;
+    }
+
+    .logo {
+        width: 90px;
+    }
+}
+
+
+
+
+
+
+/* apateu formatting */
+.video-container {
+    padding-left: 2%;
+    width: 98%;
+}
+
+.video-player {
+    flex-basis: 69%;
+}
+
+.video-player video {
+    width: 100%;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 20px;
+}
+
+.right-sidebar {
+    flex-basis: 30%;
+}
+
+.feed {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.feed img {
+    width: 100%;
+}
+
+.feed .feed-thumbnail {
+    flex-basis: 48.5%;
+}
+
+.feed .feed-vid-info {
+    flex-basis: 48.5%;
+}
+
+/* video player styles*/
+
+.video-player h3 {
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.publisher {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.publisher div {
+    flex: 1;
+}
+
+.publisher img {
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 15px;
 }
