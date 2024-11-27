@@ -367,18 +367,97 @@ nav {
     font-size: 22px;
 }
 
+
+
+.vid-functions .left-side,
+.vid-functions .right-side {
+    width: 50%;
+}
+
+.left-side .join {
+    font-size: 13px;
+    font-weight: 600;
+    background-color: #e5e5ea;
+    border: 0px;
+    height: 36px;
+    width: 60px;
+    border-radius: 30px;
+    margin-right: 8px;
+}
+
+.left-side .subscribe {
+    font-size: 13px;
+    font-weight: 600;
+    color: white;
+    background-color: #000000;
+    border: 0px;
+    height: 36px;
+    width: 95px;
+    border-radius: 30px;
+}
+
 .publisher {
     display: flex;
     align-items: center;
-    margin-top: 20px;
+    margin-right: 24px;
 }
 
 .publisher div {
     flex: 1;
+    line-height: 8px;
 }
 
 .publisher img {
-    width: 40px;
+    width: 50px;
     border-radius: 50%;
     margin-right: 15px;
+}
+
+
+.DISLIKE {
+    background-color: #e5e5ea;
+    border-radius: 30px;
+}
+
+.right-side {
+    justify-content: right;
+}
+
+.right-side img {
+    width: 32px;
+}
+
+.right-side button {
+    background-color: #e5e5ea;
+    border: 0;
+    border-radius: 30px;
+    padding: 0 15px;
+    font-weight: 600;
+    height: 36px;
+}
+
+.like img {
+    padding-right: 5px;
+}
+
+
+
+.share img {
+    padding-right: 5px;
+}
+
+
+.download img {
+    padding-right: 5px;
+}
+
+.vl {
+    border-left: 1px solid #5a5a5a;
+    height: 28px;
+}
+
+@media (max-width:1140px) {
+    .download {
+        display: none;
+    }
 }
