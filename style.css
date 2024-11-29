@@ -22,14 +22,17 @@ img {
     display: flex;
     flex-direction: column;
     /* Allows flexbox containers inside to stack vertically */
-    width: 17%;
+    width: 16%;
     height: 100vh;
     position: fixed;
     left: 0;
     padding-left: 1%;
     padding-top: 30px;
+    background-color: white;
     transition: 0.3s;
+    z-index: 10;
 }
+
 
 .left img {
     width: 33px;
@@ -454,6 +457,25 @@ nav {
 .vl {
     border-left: 1px solid #5a5a5a;
     height: 28px;
+}
+
+.left2 {
+    display: none;
+}
+
+.overlay {
+    display: flex;
+    flex-direction: column;
+    /* Allows flexbox containers inside to stack vertically */
+    width: 16%;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    padding-left: 1%;
+    padding-top: 30px;
+    background-color: white;
+    transition: 0.3s;
+    z-index: 10;
 }
 
 @media (max-width:1140px) {

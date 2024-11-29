@@ -33,7 +33,39 @@
         </div>
 
     </nav>
-
+    <!----Side Bar----->
+    <div class="left2">
+        <div class="navigation-links">
+            <a href="index.html"> <img src="images/home.png">
+                <p>Home</p>
+            </a>
+            <a href=""> <img src="images/Youtube_shorts_icon.png">
+                <p>Shorts</p>
+            </a>
+            <a href=""> <img src="images/subscribed channels.png">
+                <p>Subscriptions</p>
+            </a>
+            <hr>
+        </div>
+        <div class="subscribed-list">
+            <h3>SUBSCRIBED</h3>
+            <a href=""><img src="images/kohhau.jpg">
+                <p>Koh Hau</p>
+            </a>
+            <a href=""><img src="images/spade.jpg">
+                <p>Sped</p>
+            </a>
+            <a href=""><img src="images/Ian.jpg">
+                <p>Ion</p>
+            </a>
+            <a href=""><img src="images/haziq.jpg">
+                <p>Huzzeeq</p>
+            </a>
+            <a href=""><img src="images/anastasia.jpg">
+                <p>Anaesthesia</p>
+            </a>
+        </div>
+    </div>
     <!----Main Content----->
     <div class="right video-container">
         <div class="row">
@@ -132,5 +164,11 @@
             </div>
         </div>
     </div>
-    <script src="script.js"></script>
+    <script>
+        var left = document.querySelector(".left2");
+        var vidplayermenu = document.querySelector(".menu");
+        vidplayermenu.onclick = function () {
+            left.classList.toggle("overlay");
+            console.log("clicked");
+        }</script>
 </body>
