@@ -180,6 +180,14 @@ img {
     overflow-y: hidden;
 }
 
+.tag.active div {
+    background-color: #f0f0f0;
+    color: #000;
+    font-weight: bold;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
 ::-webkit-scrollbar {
     width: 0;
     /* Remove scrollbar space */
