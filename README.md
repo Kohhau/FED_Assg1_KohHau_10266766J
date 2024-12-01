@@ -116,6 +116,8 @@ The design was conceptualized using wireframes and mockups. [https://www.figma.c
    - On smaller screens, long comments may overflow if no responsive height is defined.
 2. **Tag Scrolling on Mobile**:
    - Horizontal scrolling for tags may feel unintuitive without visible scroll indicators.
+3. **Hatomugi video search issue**
+   - The hatomugi asmr video alone is unable to be searched. Unrelated to Japanese characters
 
 ---
 ### **Credits**
