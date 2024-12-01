@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YouTube Front Page</title>
+    <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
     <script>let activeTag = null; // Track the selected tag
 
@@ -49,7 +50,7 @@
 </head>
 
 <body>
-    <!----Header Navigation---->
+    <!--Header Navigation-->
     <nav class="flex">
         <div class="nav-left flex">
             <img src="images/menu.png" alt="error image not found" class="menu">
@@ -58,55 +59,55 @@
         <div class="nav-middle flex">
             <div class="search-bar flex">
                 <input type="text" id="myInput" onkeyup="MyFilter()" placeholder="search">
-                <img src="images/search.png">
+                <img src="images/search.png" alt="">
             </div>
-            <img src="images/voice-search.png" class="mic-image">
+            <img src="images/voice-search.png" class="mic-image" alt="">
         </div>
         <div class="nav-right flex">
             <img src="images/upload.png" alt="">
             <img src="images/more.png" alt="">
             <img src="images/notification.png" alt="">
-            <img src="images/anastasia.jpg" class="DP">
+            <img src="images/anastasia.jpg" alt="" class="DP">
 
 
 
         </div>
 
     </nav>
-    <!----Side Bar----->
+    <!--Side Bar-->
     <div class="left">
         <div class="navigation-links">
-            <a href="index.html"> <img src="images/home.png">
+            <a href="index.html"> <img src="images/home.png" alt="">
                 <p>Home</p>
             </a>
-            <a href="shorts.html"> <img src="images/Youtube_shorts_icon.png">
+            <a href="shorts.html"> <img src="images/Youtube_shorts_icon.png" alt="">
                 <p>Shorts</p>
             </a>
-            <a href=""> <img src="images/subscribed channels.png">
+            <a href=""> <img src="images/subscribed_channels.png" alt="">
                 <p>Subscriptions</p>
             </a>
             <hr>
         </div>
         <div class="subscribed-list">
             <h3>SUBSCRIBED</h3>
-            <a href=""><img src="images/kohhau.jpg">
+            <a href=""><img src="images/kohhau.jpg" alt="">
                 <p>Koh Hau</p>
             </a>
-            <a href=""><img src="images/spade.jpg">
+            <a href=""><img src="images/spade.jpg" alt="">
                 <p>Sped</p>
             </a>
-            <a href=""><img src="images/Ian.jpg">
+            <a href=""><img src="images/Ian.jpg" alt="">
                 <p>Ion</p>
             </a>
-            <a href=""><img src="images/haziq.jpg">
+            <a href=""><img src="images/haziq.jpg" alt="">
                 <p>Huzzeeq</p>
             </a>
-            <a href=""><img src="images/anastasia.jpg">
+            <a href=""><img src="images/anastasia.jpg" alt="">
                 <p>Anaesthesia</p>
             </a>
         </div>
     </div>
-    <!----Main Content----->
+    <!--Main Content-->
     <div class="right">
         <div class="tags flex">
             <a href="#" class="tag" onclick="filterByTag('Music')">
@@ -187,9 +188,9 @@
         </div>
         <div class="main-content">
             <div class="video-list" data-tags="Music, Bruno Mars, Kpop">
-                <a href="/apateu.html"><img src="images/Apateu.jpg" class="thumbnail"></a>
+                <a href="/apateu.html"><img src="images/Apateu.jpg" alt="" class="thumbnail"></a>
                 <div class="flex">
-                    <img src="images/rose.jpg">
+                    <img src="images/rose.jpg" alt="">
                     <div class="vid-info">
                         <a href="/apateu.html">ROSÉ & Bruno Mars - APT.(Official Music Video)</a>
                         <p>ROSÉ</p>
@@ -199,9 +200,9 @@
 
             </div>
             <div class="video-list" data-tags="Japanese">
-                <a href=""><img src="images/Warabe grad.jpg" class="thumbnail"></a>
+                <a href=""><img src="images/Warabe_grad.jpg" alt="" class="thumbnail"></a>
                 <div class="flex">
-                    <img src="images/oboretai.jpg">
+                    <img src="images/oboretai.jpg" alt="">
                     <div class="vid-info">
                         <a href="">Roberu on Warabe Baa-chan's final totsumachi before graduation【Holostars EngSub】
                         </a>
@@ -212,22 +213,21 @@
 
             </div>
             <div class="video-list" data-tags="Japanese, ASMR">
-                <a href=""><img src="images/asmr.jpg" class="thumbnail">
-                    <div class="flex">
-                        <img src="images/hatomugi.jpg">
-                        <div class="vid-info">
-                            <a href="">ASMR レース手袋で耳のマッサージ👂 KU100 / No Talking</a>
-                            <p>Hatomugi ASMR</p>
-                            <p>107K views &bull; 8 days ago</p>
-                        </div>
+                <a href=""><img src="images/asmr.jpg" alt="" class="thumbnail"></a>
+                <div class="flex">
+                    <img src="images/hatomugi.jpg" alt="">
+                    <div class="vid-info">
+                        <a href="">ASMR レース手袋で耳のマッサージ👂 KU100 / No Talking</a>
+                        <p>Hatomugi ASMR</p>
+                        <p>107K views &bull; 8 days ago</p>
                     </div>
-                </a>
+                </div>
 
             </div>
             <div class="video-list" data-tags="Cooking">
-                <a href=""><img src="images/har jeong gai.jpg" class="thumbnail"></a>
+                <a href=""><img src="images/har_jeong_gai.jpg" alt="" class="thumbnail"></a>
                 <div class="flex">
-                    <img src="images/lau.jpg">
+                    <img src="images/lau.jpg" alt="">
                     <div class="vid-info">
                         <a href="">🍗 How a Chinese Chef cooks Chicken Thighs (煎雞扒)!</a>
                         <p>Made With Lau</p>
@@ -237,9 +237,9 @@
 
             </div>
             <div class="video-list" data-tags="Korean, Dancing, Music">
-                <a href=""><img src="images/what is love.jpg" class="thumbnail"></a>
+                <a href=""><img src="images/what_is_love.jpg" alt="" class="thumbnail"></a>
                 <div class="flex">
-                    <img src="images/JYP.jpg">
+                    <img src="images/JYP.jpg" alt="">
                     <div class="vid-info">
                         <a href="">TWICE "What is Love?" M/V</a>
                         <p>JYP</p>
@@ -249,9 +249,9 @@
 
             </div>
             <div class="video-list" data-tags="Japanese,Gaming">
-                <a href=""><img src="images/LoL astel.jpg" class="thumbnail"></a>
+                <a href=""><img src="images/LoL_astel.jpg" alt="" class="thumbnail"></a>
                 <div class="flex">
-                    <img src="images/astel.jpg">
+                    <img src="images/astel.jpg" alt="">
                     <div class="vid-info">
                         <a href="">【League of Legends】かすたむ！ / アステル イヅル AlphaAzur³ k4sen³ 夕陽リリ³ 奈羅花³ 天帝フォルテ³ ta1yo³
                             uruca³ きなこ³</a>
@@ -262,9 +262,9 @@
 
             </div>
             <div class="video-list" data-tags="Music, Bruno Mars, Kpop">
-                <a href="/apateu.html"><img src="images/Apateu.jpg" class="thumbnail"></a>
+                <a href="/apateu.html"><img src="images/Apateu.jpg" alt="" class="thumbnail"></a>
                 <div class="flex">
-                    <img src="images/rose.jpg">
+                    <img src="images/rose.jpg" alt="">
                     <div class="vid-info">
                         <a href="/apateu.html">ROSÉ & Bruno Mars - APT.(Official Music Video)</a>
                         <p>ROSÉ</p>
@@ -274,9 +274,9 @@
 
             </div>
             <div class="video-list" data-tags="Japanese">
-                <a href=""><img src="images/Warabe grad.jpg" class="thumbnail"></a>
+                <a href=""><img src="images/Warabe_grad.jpg" alt="" class="thumbnail"></a>
                 <div class="flex">
-                    <img src="images/oboretai.jpg">
+                    <img src="images/oboretai.jpg" alt="">
                     <div class="vid-info">
                         <a href="">Roberu on Warabe Baa-chan's final totsumachi before graduation【Holostars EngSub】
                         </a>
@@ -287,22 +287,21 @@
 
             </div>
             <div class="video-list" data-tags="Japanese, ASMR">
-                <a href=""><img src="images/asmr.jpg" class="thumbnail">
-                    <div class="flex">
-                        <img src="images/hatomugi.jpg">
-                        <div class="vid-info">
-                            <a href="">ASMR レース手袋で耳のマッサージ👂 KU100 / No Talking</a>
-                            <p>Hatomugi ASMR</p>
-                            <p>107K views &bull; 8 days ago</p>
-                        </div>
+                <a href=""><img src="images/asmr.jpg" alt="" class="thumbnail"></a>
+                <div class="flex">
+                    <img src="images/hatomugi.jpg" alt="">
+                    <div class="vid-info">
+                        <a href="">ASMR レース手袋で耳のマッサージ👂 KU100 / No Talking</a>
+                        <p>Hatomugi ASMR</p>
+                        <p>107K views &bull; 8 days ago</p>
                     </div>
-                </a>
+                </div>
 
             </div>
             <div class="video-list" data-tags="Cooking">
-                <a href=""><img src="images/har jeong gai.jpg" class="thumbnail"></a>
+                <a href=""><img src="images/har_jeong_gai.jpg" alt="" class="thumbnail"></a>
                 <div class="flex">
-                    <img src="images/lau.jpg">
+                    <img src="images/lau.jpg" alt="">
                     <div class="vid-info">
                         <a href="">🍗 How a Chinese Chef cooks Chicken Thighs (煎雞扒)!</a>
                         <p>Made With Lau</p>
@@ -312,9 +311,9 @@
 
             </div>
             <div class="video-list" data-tags="Korean, Dancing, Music">
-                <a href=""><img src="images/what is love.jpg" class="thumbnail"></a>
+                <a href=""><img src="images/what_is_love.jpg" alt="" class="thumbnail"></a>
                 <div class="flex">
-                    <img src="images/JYP.jpg">
+                    <img src="images/JYP.jpg" alt="">
                     <div class="vid-info">
                         <a href="">TWICE "What is Love?" M/V</a>
                         <p>JYP</p>
@@ -324,9 +323,9 @@
 
             </div>
             <div class="video-list" data-tags="Japanese,Gaming">
-                <a href=""><img src="images/LoL astel.jpg" class="thumbnail"></a>
+                <a href=""><img src="images/LoL_astel.jpg" alt="" class="thumbnail"></a>
                 <div class="flex">
-                    <img src="images/astel.jpg">
+                    <img src="images/astel.jpg" alt="">
                     <div class="vid-info">
                         <a href="">【League of Legends】かすたむ！ / アステル イヅル AlphaAzur³ k4sen³ 夕陽リリ³ 奈羅花³ 天帝フォルテ³ ta1yo³
                             uruca³ きなこ³</a>
@@ -338,9 +337,10 @@
             </div>
         </div>
     </div>
-    <div class="bottom-bar"><a href="index.html"><img src="images/home.png"></a><a href="shorts.html"><img
-                src="images/Youtube_shorts_icon.png"></a>
-        <img src="images/plus.jpg"><img src="images/subscription.png"><img src="images/anastasia.jpg" class="DP">
+    <div class="bottom-bar"><a href="index.html"><img src="images/home.png" alt=""></a><a href="shorts.html"><img
+                src="images/Youtube_shorts_icon.png" alt=""></a>
+        <img src="images/plus.jpg" alt=""><img src="images/subscription.png" alt=""><img src="images/anastasia.jpg"
+            class="DP" alt="">
     </div>
 
 
