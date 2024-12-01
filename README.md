@@ -19,7 +19,7 @@ This project is aimed at casual viewers, content creators, and enthusiasts who c
 5. **As a general user**, I want to explore videos by tags or keywords, so that I can discover content matching my interests.
 
 #### **Design Artifacts**:  
-The design was conceptualized using wireframes and mockups. [Include links or PDF files for wireframes or Adobe XD prototypes.]
+The design was conceptualized using wireframes and mockups. [https://www.figma.com/design/tMXCIfEaC3oF3uPLOHCtUd/Figma-basics?node-id=651-7&t=Vg0uTqqDevh0c5u6-1]
 
 ---
 
