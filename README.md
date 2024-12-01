@@ -118,5 +118,16 @@ The design was conceptualized using wireframes and mockups. [https://www.figma.c
    - Horizontal scrolling for tags may feel unintuitive without visible scroll indicators.
 
 ---
-
+### **Credits**
+1. **Content**
+  - The titles, comments, thumbnail images and profile images of official channels are credited to the respective owners on youtube.
+  - Other profile images are sourced from my gallery and from friends.
+2. **Media**
+  - Photos and Images used in the creation of this site are sourced from:
+    - https://drive.google.com/file/d/1EM5G-hccHjEwWunOfHkNALzPCqluLzxu/view by GreatStack youtube channel
+    - Up_Arrow & Down_Arrow, Arkinasi (flaticon)
+    - Free Images from respective users on PngTree
+3. **Acknowledgments**
+  - This website is inspired greatly by youtube.
+  - All assets including images and intellectual property of videos and comments belong to their respective owners, rights reserved.
 This document serves as a comprehensive overview of "YouTube Reimagined," capturing its features, design process, and implementation details.
