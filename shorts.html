@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Front Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!----Header Navigation---->
+    <nav class="flex">
+        <div class="nav-left flex">
+            <img src="images/menu.png" alt="error image not found" class="menu">
+            <a href="index.html"><img src="images/YouTube_2024_logo.png" alt="error image not found" class="logo"></a>
+        </div>
+        <div class="nav-middle flex">
+            <div class="search-bar flex">
+                <input type="text" placeholder="search">
+                <img src="images/search.png">
+            </div>
+            <img src="images/voice-search.png" class="mic-image">
+        </div>
+        <div class="nav-right flex">
+            <img src="images/upload.png" alt="">
+            <img src="images/more.png" alt="">
+            <img src="images/notification.png" alt="">
+            <img src="images/anastasia.jpg" class="DP">
+
+
+
+        </div>
+
+    </nav>
+    <!----Side Bar----->
+    <div class="left">
+        <div class="navigation-links">
+            <a href="index.html"> <img src="images/home.png">
+                <p>Home</p>
+            </a>
+            <a href="shorts.html"> <img src="images/Youtube_shorts_icon.png">
+                <p>Shorts</p>
+            </a>
+            <a href=""> <img src="images/subscribed channels.png">
+                <p>Subscriptions</p>
+            </a>
+            <hr>
+        </div>
+        <div class="subscribed-list">
+            <h3>SUBSCRIBED</h3>
+            <a href=""><img src="images/kohhau.jpg">
+                <p>Koh Hau</p>
+            </a>
+            <a href=""><img src="images/spade.jpg">
+                <p>Sped</p>
+            </a>
+            <a href=""><img src="images/Ian.jpg">
+                <p>Ion</p>
+            </a>
+            <a href=""><img src="images/haziq.jpg">
+                <p>Huzzeeq</p>
+            </a>
+            <a href=""><img src="images/anastasia.jpg">
+                <p>Anaesthesia</p>
+            </a>
+        </div>
+    </div>
+    <div class="right">
+        <div class="shorts-section flex">
+            <div class="left-section flex"> <video id="videoPlayer" controls autoplay>
+                    <source id="videoSource" src="images/hatomugi_short.mp4" type="video/mp4">
+                </video></div>
+            <div class="mid-section"></div>
+            <div class="right-section flex">
+                <div class="shorts-info">
+                    <div class="short-comment-header flex">
+                        <div class="flex">
+                            <h3>Comments</h3><span>
+                                145
+                            </span>
+                        </div><img src="images/menu.png">
+                    </div>
+                    <div class="existing-comments">
+                        <div class="indiv-short-comment">
+                            <img src="images/cameron.png" class="profile">
+                            <div>
+                                <h3>Cameron <span>yesterday</span></h3>
+                                <p>Great video</p>
+                                <div class="comment-action flex"><img src="images/like.png"><span>3</span>
+                                    <img src="images/dislike.png">
+                                    <span>Reply</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="indiv-short-comment"><img src="images/gerard.png" class="profile">
+                            <div>
+                                <h3>Gerard <span>1 day ago</span></h3>
+                                <p>truly one of the videos of all time.
+                                </p>
+                                <div class="comment-action flex"><img src="images/like.png"><span>65K</span>
+                                    <img src="images/dislike.png">
+                                    <span>Reply</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="indiv-short-comment"><img src="images/astel.jpg" class="profile">
+                            <div>
+                                <h3>Astel <span>28 minutes ago</span></h3>
+                                <p>이런 라빈느낌나는 노래에 환장하는 편인데 진짜 취향 저격이고 개좋음 어케 이런노랠내냐ㅠㅠㅠㅠㅠ 진짜 로제야 너가 최고다 🩷🩷🩷
+
+
+                                </p>
+                                <div class="comment-action flex"><img src="images/like.png"><span>65K</span>
+                                    <img src="images/dislike.png">
+                                    <span>Reply</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="icons">
+                <div><img src="images/up-arrow.png" alt="" id="prevButton"></div>
+                <div><img src="images/down-arrow.png" alt="" id="nextButton"></div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom-bar"><a href="index.html"><img src="images/home.png"></a><a href="shorts.html"><img
+                src="images/Youtube_shorts_icon.png"></a>
+        <img src="images/plus.jpg"><img src="images/subscription.png"><img src="images/anastasia.jpg" class="DP">
+    </div>
+    <script src="shorts.js"></script>
+</body>
